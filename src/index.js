@@ -1,18 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Badge from './components/badges';
 
-const jsx = <h1>Hello, Platzi Badges from react!</h1>;
-/* const element = React.createElement('a', { 
-  href: 'https://platzi.com' 
-},
-'Ir a platzi'); */
-
-// Le puedo pasar variables para que las renderice
-const name = 'zzznavarrete';
-/* const element = React.createElement('h1', {}, `Hola, me llamo ${name}`) */
-const element = <h1>Hola mi nombre es= {name}</h1>
+import 'bootstrap/dist/css/bootstrap.css';
+import './global.css';
+import BadgeNew from './pages/BadgeNew';
+import Navbar from './components/Navbar';
 const container = document.getElementById('app');
 
 // ReacDOM.render(__que__, __donde__)
-ReactDOM.render(element, container);
+ReactDOM.render(<BadgeNew
+ firstName= "Nicolás"
+  lastName= "NN." 
+  jobTitle= "Software engineer" 
+  twitter= "zzznavarrete" 
+  avatarURL= "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Favatarfiles.alphacoders.com%2F160%2F160326.png&f=1&nofb=1"
+
+  />
+  , container);
 
