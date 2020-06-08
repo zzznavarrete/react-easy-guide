@@ -4,14 +4,17 @@ import "./styles/Badge.css";
 
 class Badge extends React.Component{
 
+
+
+  
+
     render(){
-        // class propierties
+
         
 
-        const firstName = "Nicolas";
-        const lastName = "N. Navarrete";
-
-        return <div className="Badge">
+        return (
+        
+        <div className="Badge">
             <div className="Badge__header">
                 <img src={confLogo} alt="Logo de la conferencia" />
             </div>
@@ -31,6 +34,8 @@ class Badge extends React.Component{
             </div>
             <div className="Badge__footer">#platzi</div>
         </div>
+
+        );
     }
 
 }
