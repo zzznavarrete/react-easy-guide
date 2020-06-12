@@ -8,7 +8,7 @@ import PageLoading from "../components/PageLoading";
 
 //import './styles/BadgeNew.css';
 
-class BadgeNew extends React.Component {
+class BadgeEdit extends React.Component {
   state = {
     loading: false,
     error: null,
@@ -50,7 +50,7 @@ class BadgeNew extends React.Component {
       
     } catch (ex) {
       this.setState({ loading: false, error: ex });
-      console.log("BadgeNew.js - handleSubmit - ex = ", ex);
+      console.log("BadgeEdit.js - handleSubmit - ex = ", ex);
     }
   };
 
@@ -91,4 +91,4 @@ class BadgeNew extends React.Component {
   }
 }
 
-export default BadgeNew;
+export default BadgeEdit;
